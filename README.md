@@ -35,11 +35,13 @@ app.use(authen({
 ## authen(options)
 `options` is an object for config middleware. `options` includes:
 
-    1. login: login page path
-    2. home: default redirected page after logged-in
-    3. excepts: non-required auth page
-    4. user: session' key for determine wherether user logged-in
-    5. referer: session' key for save the referer page
+No | Property | Default value | Description |
+--- | --- | --- | --- |
+1 | `login` | `/login` | login page path |
+2 |  `home` | `/` | default redirected page after logged-in |
+3 | `excepts` | `[]` | an array - non-required auth page |
+4 | `user` | `user` | session' key for determine wherether user logged-in |
+5 | `referer` | `referer` | session' key for save the referer page |
 
 # License
 [MIT](https://github.com/dominhhai/express-authen/blob/master/LICENSE)
