@@ -13,7 +13,7 @@ function mergeOptions (defaultOpt, options) {
  * Control direct page when require auth.
  * 1. Auto redirect to login page 
  *    when non-logged in user access the required-auth page
- * 2. Save the referer in to session
+ * 2. Save the referer into session
  *
  * @param {Object} middleware options
  *		@login: login page path
@@ -57,4 +57,3 @@ exports = module.exports = function requireLogin (options) {
 	  	return res.redirect(options.login)
 	}
 }
-
