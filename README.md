@@ -1,5 +1,7 @@
 # express-authen
-Auto redirect to login page middleware for Expressjs
+Auto redirect to login page middleware for Expressjs. The main features:
+1. Auto redirect to login page when access the required-logged-in page
+2. Save the referer into session before redirect to login page
 
 # Installation
 
