@@ -1,6 +1,6 @@
 {
   "name": "express-authen",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Auto redirect to login page middleware for Expressjs",
   "main": "index.js",
   "scripts": {
