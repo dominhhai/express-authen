@@ -1,0 +1,26 @@
+{
+  "name": "express-auth",
+  "version": "1.0.0",
+  "description": "Authentication for Expressjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "lab -D -c -S -t 100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dominhhai/express-auth"
+  },
+  "keywords": [
+    "Expressjs",
+    "authen",
+    "redirect",
+    "to",
+    "login"
+  ],
+  "author": "Do Minh Hai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominhhai/express-auth/issues"
+  },
+  "homepage": "https://github.com/dominhhai/express-auth"
+}
