@@ -16,6 +16,7 @@ $ npm install --save express-authen
 ```
 
 # API
+This middleware uses session to check wherether user logged-in or not, and save the referer before redirecting to login page. So, you should declare it after declaring session middleware.
 
 ## Example
 
