@@ -1,7 +1,7 @@
 {
-  "name": "express-auth",
+  "name": "express-authen",
   "version": "1.0.0",
-  "description": "Authentication for Expressjs",
+  "description": "Auto redirect to login page middleware for Expressjs",
   "main": "index.js",
   "scripts": {
     "test": "lab -D -c -S -t 100"
@@ -15,7 +15,9 @@
     "authen",
     "login"
   ],
-  "author": "Do Minh Hai",
+  "author": {
+    "name": "Do Minh Hai"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dominhhai/express-auth/issues"
