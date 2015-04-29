@@ -41,7 +41,7 @@ exports = module.exports = function requireLogin (options) {
 		// go to homepage where:
 		// 1. logged-in, and
 		// 2. on login page
-		if (url === options.login && user)
+		if (user && url === options.login)
 	    	return res.redirect(options.home)
 	    
 	    // stay on page wherether:
