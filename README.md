@@ -26,7 +26,7 @@ var authen = require('express-authen')
 app.use(authen({
     'login': '/',
     'home': '/home',
-    'userSession': 'user',
+    'user': 'user',
     'referer': 'referer',
 }))
 
