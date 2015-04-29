@@ -5,13 +5,23 @@ Auto redirect to login page middleware for Expressjs. The main features:
 
 # Installation
 
+```
+$ npm install express-authen
+```
+
+If you want to save this module into `package.json`, simply use:
+
+```
+$ npm install --save express-authen
+```
+
 # API
 
 ## Example
 
 ```javascript
-var auth = require('express-auth')
-app.use(auth({
+var authen = require('express-authen')
+app.use(authen({
     'login': '/',
     'home': '/home',
     'userSession': 'user',
@@ -20,7 +30,7 @@ app.use(auth({
 
 ```
 
-## auth(options)
+## authen(options)
 `options` is an object for config middleware. `options` include:
 
     1. login: login page path
@@ -30,4 +40,4 @@ app.use(auth({
     5. referer: session' key for save the referer page
 
 # License
-[MIT](https://github.com/dominhhai/express-auth/blob/master/LICENSE)
+[MIT](https://github.com/dominhhai/express-authen/blob/master/LICENSE)
