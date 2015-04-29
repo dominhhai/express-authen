@@ -1,8 +1,31 @@
 # express-authen
-Authentication for Expressjs
+Auto redirect to login page middleware for Expressjs
 
-## Main Funcitons
-1. Template for Authen
-2. Auto redirect to login page
-3. Redirect to referer page after logged-in
-4. Control session and cookie
+# Installation
+
+# API
+
+## Example
+
+```javascript
+var auth = require('express-auth')
+app.use(auth({
+    'login': '/',
+    'home': '/home',
+    'userSession': 'user',
+    'referer': 'referer',
+}))
+
+```
+
+## auth(options)
+`options` is an object for config middleware. `options` include:
+
+    1. login: login page path
+    2. home: default redirected page after logged-in
+    3. excepts: non-required auth page
+    4. user: session' key for determine wherether user logged-in
+    5. referer: session' key for save the referer page
+
+# License
+[MIT](https://github.com/dominhhai/express-auth/blob/master/LICENSE)
