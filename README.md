@@ -31,7 +31,7 @@ app.use(authen({
 ```
 
 ## authen(options)
-`options` is an object for config middleware. `options` include:
+`options` is an object for config middleware. `options` includes:
 
     1. login: login page path
     2. home: default redirected page after logged-in
