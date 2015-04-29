@@ -10,14 +10,14 @@ Auto redirect to login page middleware for Expressjs. The main features:
 $ npm install express-authen
 ```
 
-If you want to save this module into `package.json`, simply use:
+If you want to save this module into the `package.json`, simply use:
 
 ```
 $ npm install --save express-authen
 ```
 
 # API
-This middleware uses session to check wherether user logged-in or not, and save the referer before redirecting to login page. So, you should declare it after declaring session middleware.
+This middleware uses session to check wherether user logged-in or not, and save the referer before redirecting to login page. So, you should declare it after declaring the session middleware.
 
 ## Example
 
