@@ -1,6 +1,8 @@
 # express-authen
 Auto redirect to login page middleware for Expressjs. The main features:
 
+[![npm version](https://badge.fury.io/js/express-authen.svg)](http://badge.fury.io/js/express-authen)
+
 1. Auto redirect to login page when access the required-logged-in page
 2. Save the referer into session before redirect to login page
 
