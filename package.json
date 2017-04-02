@@ -1,6 +1,6 @@
 {
   "name": "express-authen",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Auto redirect to login page middleware for Expressjs",
   "main": "index.js",
   "scripts": {
@@ -13,11 +13,23 @@
   "keywords": [
     "Expressjs",
     "authen",
-    "login"
+    "login",
+    "persist login",
+    "auth",
+    "auto redirect",
+    "redirect",
+    "middleware"
   ],
   "author": {
     "name": "Do Minh Hai"
   },
+  "contributors":[
+    {
+      "name":"Mustafa Segun",
+      "email": "segsalerty@gmail.com",
+      "url": "https://github.com/segsalerty2013"
+    }
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dominhhai/express-authen/issues"

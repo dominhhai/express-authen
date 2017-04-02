@@ -21,7 +21,43 @@ $ npm install --save express-authen
 # API
 This middleware uses session to check wherether user logged-in or not, and save the referer before redirecting to login page. So, you should declare it after declaring the session middleware.
 
-## Example
+## Example for v2.x.x
+
+```javascript
+var authen = require('express-authen')
+app.use(authen({
+    'user': {
+        'member':{
+            'login':'/',
+            'logout':'/customers/logout',
+            'home':'/customers/dashboard'
+        },
+        'admin':{
+            'login':'/admin/login',
+            'logout':'/admin/logout',
+            'home':'/admin/home'
+        }
+    },
+    'default_page':'/',
+    'auto_refer':true,
+    'referer': 'referer',
+    'excepts':['/api/list/members', '/api/add/members']
+}))
+
+```
+
+## authen 2.x.x (options)
+`options` is an object for config middleware. `options` includes:
+
+No | Property | Default value | Description |
+--- | --- | --- | --- |
+1 | `user` | `{}` | Object with keys to user identity which represent the session name to validate |
+2 | `default_page` | `/` | neutral page or homepage of the app that maybe not require any authentication |
+3 | `excepts` | `[]` | an array - non-required auth page |
+4 | `auto_refer` | `boolean` | (Optional) true or false to redirect or resume to refered page on login
+5 | `referer` | `referer` | session' key for save the referer page |
+
+## Example for v1.x.x
 
 ```javascript
 var authen = require('express-authen')
@@ -34,7 +70,7 @@ app.use(authen({
 
 ```
 
-## authen(options)
+## authen 1.x.x (options)
 `options` is an object for config middleware. `options` includes:
 
 No | Property | Default value | Description |
