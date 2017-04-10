@@ -23,7 +23,7 @@ function mergeOptions (defaultOpt, options) {
  *		@referer: session' key for save the referer page
  * @return {Function} Expressjs Middleware
  */
-exports = module.exports = function requireLogin (options) {
+var old_version = function requireLogin (options) {
 	// merge with default options
 	options = mergeOptions({
 		'login': '/login',
@@ -56,4 +56,14 @@ exports = module.exports = function requireLogin (options) {
 	  	// redirect to login page if not login
 	  	return res.redirect(options.login)
 	}
-}
+};
+
+exports = module.exports = (options)=>{
+	if(typeof options.user === 'object'){
+		//this is the latest update use config
+		return require('./new')(options);
+	}
+	else{
+		return old_version(options);
+	}
+};
